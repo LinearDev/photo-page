@@ -1,0 +1,14 @@
+.filterBox {
+  margin-top: 20px;
+  flex: 0;
+  display: contents;
+}
+
+.filterTitle {
+  font-size: 18px;
+  display: block;
+}
+
+.filterTitle select {
+  margin-left: 7px;
+}
