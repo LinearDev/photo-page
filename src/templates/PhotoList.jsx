@@ -1,11 +1,16 @@
 import React from 'react'
 import PhotoElem from './PhotoElem'
-import images from './data/images.json'
+import images from '../../db.json'
 
 const PhotoList = () => {
   return (
-    <div className='content container'>
-        {images.map(alb => {return <PhotoElem album={alb} />})}
+    <div className='content container row'>
+        {images.map((alb) => {
+            return alb.content.map(elem => {
+                return <PhotoElem title={elem.title} />
+            });
+            }
+        )}
     </div>
   )
 }
